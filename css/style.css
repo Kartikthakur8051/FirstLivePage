@@ -1,0 +1,256 @@
+body {
+    margin: 0% auto;
+    max-width: 1366px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.unipad {
+    padding: 0px 10%;
+}
+
+.container {
+    background: linear-gradient(to right, rgb(14, 164, 190), rgb(153, 26, 170));
+    margin: 0px;
+
+}
+
+.topbar {
+    background-color: #032420;
+    height: 50px;
+}                                                                                                                                                                         
+
+.topbar p {
+    color: white;
+    float: right;
+}
+
+.topbar span {
+    background-color: #11c7b2;
+    color: #032420;
+
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    height: 6rem;
+}
+
+.navelement {
+    float: right;
+    margin: 2.35rem -100px;
+}
+
+.navbar img {
+    float: left;
+    width: 6rem;
+}
+
+.navelement a {
+    padding: 0px 1em;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.flexitem {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainbox {
+    background-image: url(../images/IMG_20200601_095849.png);
+    margin: 1rem 0px;
+    padding: 6rem;
+    align-items: center;
+}
+
+.mainbox h1 {
+    color: rgb(200, 221, 7);
+    font-size: 3rem;
+
+}
+
+.mainbox .form {
+    text-align: center;
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 5px;
+    width: 30%;
+}
+.form input{
+    margin: 0.5em;
+    width: 70%;
+    background-color: transparent;
+}
+.form button{
+    margin: 0.5em;
+    width: 70%;
+    background-color: rgb(9, 74, 134);
+    color: white;
+    padding: 0.8em;
+    
+}
+.box1{
+    width: 50%;
+}
+
+.submain {
+    justify-content: space-around;
+}
+.submain p{
+    color: bisque;
+}
+.bottombox h2{
+    text-align: center;
+    background-color: white;
+}
+.bb{
+    width: 25%;
+    border: 2px solid #032420;
+    border-radius: 5px;
+    padding: 1rem;
+    color: rgb(231, 209, 195);
+    text-align: center;
+}
+footer{
+    margin: 2rem 0rem 0rem 0rem;
+}
+.topfooter{
+    color: rgb(233, 233, 223);
+    background-color: rgb(2 2 2 / 81%);
+    /* text-decoration: none; */
+}
+.topfooter a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-align: center;
+
+    color: rgb(116, 228, 228);
+}
+.topfooter li{
+    border-bottom:2px solid #ffffff;
+    list-style: none;
+}
+.bottomfooter{
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+h4, h3{
+    text-align: center;
+}
+.smedia a, .contact i{
+    margin: 0.2em;
+    background-color: rgb(53, 77, 97);
+    padding: 0.5em;
+}
+.bb i{
+    background-color: aliceblue;
+}
+.mobile-cross{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+/* responsive */
+@media only screen and (max-width:540px){
+    .flexitem{
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    .navbar img {
+        text-align: center;
+        float: none;
+        margin: 0rem 35%;
+        /* padding: 0rem 0rem; */
+    }
+    .mainbox h1{
+        text-align: center;
+           font-size: 2rem;
+    }
+    .navelement{
+        float: none;
+    }
+    .mainbox .form {
+        width: 90%;
+        margin: 2rem;
+    }
+    .box1 {
+        width: 80%;
+    }
+    .mainbox{
+        margin: 0rem 45px;
+        padding: 1rem;
+    }
+    .bottombox h2{
+        font-size: 1.5rem;
+    padding: 0.5em;
+    }
+    .bb{
+        width: 65%;
+        margin: 1rem;
+    }
+    .topfooter{
+        padding: 2rem;
+    }
+    .bottombox h2 {
+        /* text-align: center; */
+        background-color: #680f6347;
+    }
+}
+ /* mobile-menu */
+ @media only screen and (max-width:540px){
+    .navelement {
+        display: block;
+        background-color: #000000e0;
+        position: absolute;
+        top: 0rem;
+        height: 100%;
+        width: 80%;
+        padding: 0rem 0rem;
+        transition: all 0.5s ease;
+    }
+    .navelement a {
+        display: block;
+        padding: 1em 6em;
+        font-size: 1.2 rem;
+        border-bottom: 2px  solid;
+    }
+    .mobile-cross{
+        text-align: right;
+        border-bottom: 0px solid;
+    }
+    .fa-circle-xmark{
+        font-size: 30px;
+    }
+    .navelement{
+        left: -80%;
+    }
+    .mobile-menu{
+        display: block;
+        background-color: #00337d00;
+        color: white;
+        font-size: 20px;
+        float: left;
+        width: 100%;
+        margin: 0rem 0rem;
+        padding: 1rem 3rem;
+        font-weight: bold;
+    }
+    .mobile-menu i{
+        margin: 0.2em;
+    padding: 0.5em;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: black;
+    }
+
+ }
+
+    
